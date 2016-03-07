@@ -22,6 +22,7 @@
     "compression": "^1.6.1",
     "express": "^4.13.4",
     "font-awesome": "^4.5.0",
+    "morgan": "^1.7.0",
     "pretty-error": "^2.0.0",
     "serve-favicon": "^2.3.0"
   },
