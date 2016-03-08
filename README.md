@@ -1,4 +1,5 @@
 # Power Hour Web
+[![Build Status](https://ci.hoogit.ca/buildStatus/icon?job=PowerHour.Site.master&build=2)](https://ci.hoogit.ca/job/PowerHour.Site.master/2/) [![Build Status](https://ci.hoogit.ca/buildStatus/icon?job=PowerHour.Site.develop)](https://ci.hoogit.ca/job/PowerHour.Site.develop/)
 
 Website front end for my Power Hour Android applicaion, the source for which can be found [here](http://github.com/jordond/powerhour).
 
@@ -20,9 +21,10 @@ Website front end for my Power Hour Android applicaion, the source for which can
 - Run simple server to serve angular files.
 
 ## To Do
+- TESTS
 - Build front-end.
 - Dockerize website for easier managment.
-- Add to my Jenkins instance.
+- ~~Add to my Jenkins instance.~~
 
 ## Development
 1. Clone the repo `git clone http://github.com/jordond/powerhour-site`
