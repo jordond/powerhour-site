@@ -5,13 +5,38 @@ Website front end for my Power Hour Android applicaion, the source for which can
 
 <a href="https://play.google.com/store/apps/details?id=ca.hoogit.powerhour&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" width="150px" /></a>
 
-## Install
+# Install
+1. Download and extract latest compiled files from [here](https://ci.hoogit.ca/job/PowerHour.Site.master/lastSuccessfulBuild/artifact/*zip*/archive.zip).
+2. Change into directory and run `NODE_ENV=production npm install`.
+3. Start server by running `npm start`.
+  - or `NODE_ENV=production PORT=8080 node ./bin/server.js`
+4. Navigate to `http://localhost:8080`
+
+## From source
 1. Clone the repo `git clone http://github.com/jordond/powerhour-site`
 1. Run `npm install`
+1. Run `npm run build`
 1. Run `npm start`
-1. Navigate to `localhost:8080`
+1. Navigate to `http://localhost:8080`
 
-## Features
+## Docker
+1. Clone the repo: `git clone http://github.com/jordond/powerhour-site`
+1. Build docker image: `docker build -t jordond/powerhour docker/`
+1. Create a container:
+
+```
+  docker run -d \
+    --name=powerhour \
+    --restart=always \
+    -p <port>:8080 \
+    jordond/powerhour
+```
+
+###Notes
+- I run this in a docker container, then have my nginx server reverse proxy to this.
+- Add `-e staging=true` to the `docker run` command to enable running from the `develop` branch.
+
+# Features
 - Written with the following technologies:
   - Webpack
   - ES6
@@ -26,22 +51,24 @@ Website front end for my Power Hour Android applicaion, the source for which can
 - Dockerize website for easier managment.
 - ~~Add to my Jenkins instance.~~
 
-## Development
+# Development
 1. Clone the repo `git clone http://github.com/jordond/powerhour-site`
 1. Run `npm install`
-  - Note: This will install all dependencies then it will build a production ready version.
+1. Run `npm run hook-install` to setup the precommit hook.
 1. Then run `npm run dev`
 1. Edit away, webpack will detect changes and rebuild, and then BrowserSync will reload.
 
 ## NPM Scripts
-- `lint` - Run eslint on all javascript files in `src/`.
-- `start` - Start the server by running `bin/server.js`.
-- `start-dev` - Start server in development mode.
-- `build` - Build all of the front-end javascript with webpack.
-- `build-dev` - Build, and watch for changes.
-- `dev` - Run server in development, and build & watch front end javascript.
+- `npm run lint`         - Run eslint on all javascript files in `src/`.
+- `npm run start`        - Start the server by running `bin/server.js`.
+- `npm run start-dev`    - Start server in development mode.
+- `npm run build`        - Build all of the front-end javascript with webpack.
+- `npm run build-dev`    - Build, and watch for changes.
+- `npm run dev`          - Run server in development, and build & watch front end javascript.
+- `npm run hook-install` - Install a precommit hook that will run the tasks in the `package.json`.
+- `npm run hook-remove`  - Remove the precommit.
 
-## License
+# License
 
 ```
 The MIT License (MIT)
