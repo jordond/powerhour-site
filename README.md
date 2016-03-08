@@ -38,6 +38,8 @@ Website front end for my Power Hour Android applicaion, the source for which can
 - `build` - Build all of the front-end javascript with webpack.
 - `build-dev` - Build, and watch for changes.
 - `dev` - Run server in development, and build & watch front end javascript.
+- `hook-install` - Install a precommit hook that will run the tasks in the `package.json`.
+- `hook-remove` - Remove the precommit.
 
 ## License
 

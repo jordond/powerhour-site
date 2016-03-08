@@ -21,7 +21,9 @@
     "build": "npm run lint && better-npm-run build:prod",
     "build-dev": "better-npm-run build:dev",
     "postinstall": "npm run build",
-    "dev": "concurrently --kill-others \"npm run build-dev\" \"npm run start-dev\""
+    "dev": "concurrently --kill-others \"npm run build-dev\" \"npm run start-dev\"",
+    "hook-install": "precommit install",
+    "hook-remove": "precommit remove"
   },
   "precommit": [
     "npm run lint"
