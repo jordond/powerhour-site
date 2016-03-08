@@ -21,4 +21,4 @@ const core =
   angular
     .module('app.core', dependencies);
 
-export default core;
+export default core.name;
