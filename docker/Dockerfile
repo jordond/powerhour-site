@@ -7,6 +7,7 @@ RUN mkdir -p /usr/src
 WORKDIR /usr/src
 
 RUN git clone https://github.com/jordond/powerhour-site /usr/src
+RUN npm install --unsafe-perm
 
 EXPOSE 8080
 
