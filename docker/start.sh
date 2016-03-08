@@ -12,4 +12,5 @@ fi
 
 git pull
 npm install --unsafe-perm
-npm run start
+npm run build
+npm start
