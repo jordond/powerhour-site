@@ -1,5 +1,6 @@
 import * as path from 'path';
 import * as http from 'http';
+import * as fs from 'fs';
 
 import Express from 'express';
 import PrettyError from 'pretty-error';
@@ -27,7 +28,7 @@ const config = Object.assign({
   title: 'Power Hour',
   port: process.env.PORT,
   dir: {
-    static: path.join(__dirname, '../')
+    static: path.join(__dirname, '..', 'static')
   }
 }, environment);
 
@@ -39,9 +40,9 @@ app.use(Express.static(config.dir.static));
 app.use(favicon(path.join(config.dir.static, 'favicon.ico')));
 
 if (config.isProduction) {
-  app.use(morgan('combined'), {
+  app.use(morgan('combined', {
     skip: (req, res) => res.statusCode < 400
-  });
+  }));
 } else {
   app.use(morgan('dev'));
 }
@@ -49,14 +50,14 @@ if (config.isProduction) {
 /**
  * Routes
  */
-app.route('/:url(assets|js|fonts|templates)/*')
+app.route('/:url(dist|assets|js|fonts|templates)/*')
   .get((req, res) => res.sendStatus(404));
 
 // All unregistered routes should send index
 app.route('/*')
   .get((req, res) => {
     res.setHeader('Content-Type', 'text/html');
-    stream(path.join(config.dir.static, 'dist', 'index.html'))
+    fs.createReadStream(path.join(config.dir.static, 'dist', 'index.html'))
       .pipe(res);
   });
 
@@ -66,8 +67,8 @@ app.route('/*')
 if (config.port) {
   server.listen(config.port, (err) => {
     if (err) {
-      console.error('==>    ERROR: Error listening on port ' + config.port);
-      console.error(err);
+      console.info('==>    ERROR: Error listening on port :%s', config.port);
+      console.error(pretty.render(err));
     } else {
       console.info('\n==>     ✅ OK %s is running on http://localhost:%s.', config.title, config.port);
     }

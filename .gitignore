@@ -16,3 +16,5 @@ Icon?
 Thumbs.db
 
 typings/
+
+dist/
