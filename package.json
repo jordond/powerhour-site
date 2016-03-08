@@ -18,7 +18,7 @@
     "lint": "eslint -c .eslintrc src",
     "start": "better-npm-run start:prod",
     "start-dev": "better-npm-run start:dev",
-    "build": "better-npm-run build:prod",
+    "build": "npm run lint && better-npm-run build:prod",
     "build-dev": "better-npm-run build:dev",
     "postinstall": "npm run build",
     "dev": "concurrently --kill-others \"npm run build-dev\" \"npm run start-dev\""
