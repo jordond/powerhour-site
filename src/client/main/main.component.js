@@ -1,9 +1,15 @@
-import template from './main.tpl.html';
 import './main.scss';
+
+/* eslint indent: 0 */
+const template = [
+  '<div>',
+    '<header></header>',
+  '</div>'
+].join('');
 
 const mainComponent = {
   bindings: {},
-  templateUrl: template
+  template
 };
 
 export default mainComponent;
