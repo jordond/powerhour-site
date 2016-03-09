@@ -70,8 +70,10 @@
     "express": "^4.13.4",
     "font-awesome": "^4.5.0",
     "morgan": "^1.7.0",
+    "normalize.css": "^3.0.3",
     "pretty-error": "^2.0.0",
-    "serve-favicon": "^2.3.0"
+    "serve-favicon": "^2.3.0",
+    "skeleton-css": "^2.0.4"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",

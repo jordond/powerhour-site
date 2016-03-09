@@ -14,7 +14,7 @@ module.exports = {
   devtool: 'source-map',
   context: __dirname,
   entry: {
-    vendor: ['angular', 'angular-material', 'angular-ui-router'],
+    vendor: ['angular', 'angular-ui-router'],
     app: entryJS
   },
   output: {
@@ -75,6 +75,6 @@ module.exports = {
     modulesDirectories: [
       'node_modules'
     ],
-    extensions: ['', '.js', '.json']
+    extensions: ['', '.js', '.json', '.css']
   }
 };
