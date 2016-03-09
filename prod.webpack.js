@@ -36,7 +36,7 @@ module.exports = {
     }, {
       test: /\.js$/,
       exclude: /(node_modules)/,
-      loader: "ng-annotate?add=false!babel"
+      loader: "ng-annotate!babel"
     }, {
       test: [/fontawesome-webfont\.svg/, /fontawesome-webfont\.eot/, /fontawesome-webfont\.ttf/, /fontawesome-webfont\.woff/, /fontawesome-webfont\.woff2/],
       loader: 'file?name=fonts/[name].[ext]'
