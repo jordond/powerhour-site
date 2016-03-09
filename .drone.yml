@@ -1,0 +1,8 @@
+build:
+  image: node:wheezy
+  commands:
+    - npm install
+    - npm run build
+branches:
+  - master
+  - develop
