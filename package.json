@@ -19,8 +19,10 @@
     "start": "better-npm-run start:prod",
     "start-dev": "better-npm-run start:dev",
     "build": "npm run lint && better-npm-run build:prod",
+    "build-watch": "npm run lint && better-npm-run build:prod:watch",
     "build-dev": "better-npm-run build:dev",
     "dev": "concurrently --kill-others \"npm run build-dev\" \"npm run start-dev\"",
+    "dev-prod": "concurrently --kill-others \"npm run build-watch\" \"npm run start\"",
     "hook-install": "precommit install",
     "hook-remove": "precommit remove",
     "upgrade": "git pull && npm install"
@@ -47,6 +49,12 @@
     },
     "build:prod": {
       "command": "webpack --verbose --colors --display-error-details --config prod.webpack.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "build:prod:watch": {
+      "command": "webpack --watch --debug --verbose --colors --display-error-details --config prod.webpack.js",
       "env": {
         "NODE_ENV": "production"
       }

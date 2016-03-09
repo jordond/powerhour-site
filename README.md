@@ -53,7 +53,7 @@ Website front end for my Power Hour Android applicaion, the source for which can
 1. Clone the repo `git clone http://github.com/jordond/powerhour-site`
 1. Run `npm install`
 1. Run `npm run hook-install` to setup the precommit hook.
-1. Then run `npm run dev`
+1. Then run `npm run dev` *or* `npm run dev-prod` for testing production mode.
 1. Edit away, webpack will detect changes and rebuild, and then BrowserSync will reload.
 
 ## NPM Scripts
