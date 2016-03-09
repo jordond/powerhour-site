@@ -11,17 +11,15 @@ deploy:
   ssh:
     host: hoogit.ca
     user: user
-    port: 22
     commands:
-      - echo docker restart powerhour-staging
+      - docker restart powerhour-staging
     when:
       branch: develop
   ssh:
     host: hoogit.ca
     user: user
-    port: 22
     commands:
-      - echo docker restart powerhour
+      - docker restart powerhour
     when:
       branch: master
 branches:
