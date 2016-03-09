@@ -1,10 +1,14 @@
-import 'angular-material/angular-material.css';
+import angular from 'angular';
+
 import 'font-awesome/css/font-awesome.css';
+import 'skeleton-css/css/skeleton.css';
+import 'normalize.css/normalize';
 
 // Core vendor libs
 import ngAnimate from 'angular-animate';
 import ngUiRouter from 'angular-ui-router';
-import ngMaterial from 'angular-material';
+
+import coreRoutes from './core.routes';
 
 const dependencies = [
  /* Angular modules */
@@ -13,12 +17,12 @@ const dependencies = [
  /* Cross-app modules */
 
  /* 3rd party modules */
-  ngUiRouter,
-  ngMaterial
+  ngUiRouter
 ];
 
 const core =
   angular
-    .module('app.core', dependencies);
+    .module('app.core', dependencies)
+    .config(coreRoutes);
 
-export default core;
+export default core.name;
