@@ -1,5 +1,5 @@
 # Power Hour Web
-[![Build Status](https://ci.hoogit.ca/buildStatus/icon?job=PowerHour.Site.master&build=2)](https://ci.hoogit.ca/job/PowerHour.Site.master/2/) [![Build Status](https://ci.hoogit.ca/buildStatus/icon?job=PowerHour.Site.develop)](https://ci.hoogit.ca/job/PowerHour.Site.develop/)
+[![Build Status](https://ci.hoogit.ca/buildStatus/icon?job=PowerHour.Site.master&build=2)](https://ci.hoogit.ca/job/PowerHour.Site.master/2/) [![Build Status](https://ci.hoogit.ca/buildStatus/icon?job=PowerHour.Site.develop)](https://ci.hoogit.ca/job/PowerHour.Site.develop/) [![Build Status](https://drone.hoogit.ca/api/badges/jordond/powerhour-site/status.svg)](https://drone.hoogit.ca/jordond/powerhour-site)
 
 Website front end for my Power Hour Android applicaion, the source for which can be found [here](http://github.com/jordond/powerhour).
 
