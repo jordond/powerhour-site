@@ -3,7 +3,7 @@ import './main.scss';
 /* eslint indent: 0 */
 const template = [
   '<div>',
-    '<header></header>',
+    '<header class="section"></header>',
   '</div>'
 ].join('');
 
