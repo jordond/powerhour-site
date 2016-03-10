@@ -7,3 +7,11 @@
     margin-bottom: 1.2rem;
   }
 }
+
+@media (max-width: 425px) {
+  header {
+    &.section {
+      padding: 3rem 0 7rem;
+    }
+  }
+}
