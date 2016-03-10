@@ -28,7 +28,7 @@ const template = [
       '<div class="row">',
         '<div class="one-half column header-left">',
           '<h3 class="header-heading">{{$ctrl.content.title}}</h3>',
-          '<h4 class="header-heading">{{$ctrl.content.description}}</h4>',
+          '<h4 class="header-subheading">{{$ctrl.content.description}}</h4>',
           '<div class="action-buttons" ng-repeat="action in $ctrl.content.actions">',
             '<a href="{{action.link}}" class="button" ng-class="action.class">',
               '<i class="fa {{action.icon}}"></i> {{action.name}}',

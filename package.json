@@ -68,6 +68,14 @@
     }
   },
   "dependencies": {
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "pretty-error": "^2.0.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "normalize.css": "^3.0.3",
+    "font-awesome": "^4.5.0",
     "angular": "^1.5.0",
     "angular-animate": "^1.5.0",
     "angular-aria": "^1.5.0",
@@ -75,15 +83,6 @@
     "angular-messages": "^1.5.0",
     "angular-ui-router": "^0.2.18",
     "compression": "^1.6.1",
-    "express": "^4.13.4",
-    "font-awesome": "^4.5.0",
-    "morgan": "^1.7.0",
-    "normalize.css": "^3.0.3",
-    "pretty-error": "^2.0.0",
-    "serve-favicon": "^2.3.0",
-    "skeleton-css": "^2.0.4"
-  },
-  "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.6.5",
     "babel-eslint": "^5.0.0",
@@ -111,6 +110,7 @@
     "node-sass": "^3.4.2",
     "precommit": "^1.2.0",
     "sass-loader": "^3.1.2",
+    "skeleton-framework": "^1.0.8",
     "source-map-support": "^0.4.0",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
