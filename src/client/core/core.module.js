@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 import 'font-awesome/css/font-awesome.css';
-import 'skeleton-framework/dist/skeleton.min.css';
+import 'skeleton-css/css/skeleton.css';
 import 'normalize.css/normalize';
 import './core';
 
