@@ -75,6 +75,6 @@ module.exports = {
     modulesDirectories: [
       'node_modules'
     ],
-    extensions: ['', '.js', '.json', '.css']
+    extensions: ['', '.js', '.json', '.css', '.scss']
   }
 };

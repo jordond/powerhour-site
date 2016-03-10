@@ -1,0 +1,56 @@
+phone {
+  img {
+    position: relative;
+    max-width: 100%;
+    margin: -3rem auto -12rem;
+
+  }
+  + phone {
+    display: none;
+  }
+}
+
+@media (min-width: 550px) {
+  phone {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+    margin: 3rem auto -12rem;
+
+    + phone {
+      top: -3rem;
+      display: block;
+      max-width: 73.8%;
+      right: 1rem;
+      z-index: 2;
+      max-height: 338px;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  phone {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+
+    + phone {
+      top: -11rem;
+      max-height: 472px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  phone {
+    top: -16rem;
+    max-height: 615px;
+
+    + phone {
+      top: -10rem;
+      max-height: 570px;
+    }
+  }
+}

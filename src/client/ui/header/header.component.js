@@ -2,41 +2,42 @@ import './header.scss';
 
 const content = {
   title: 'Pour Hour for Android',
-  description: 'An easy way to keep track during everyone\'s favourite drinking game! ' +
-               'Choose a game mode, and get drinking (responsibly)!',
-  screenshot: 'screen_main.png',
+  description: 'An easy way to keep track during everyone\'s favourite drinking game! ',
+  screenshots: [
+    'images/screen_main_framed.png',
+    'images/screen_game_active_shot_framed.png'
+  ],
   actions: [{
-      name: 'View Source',
-      link: 'http://github.com/jordond/powerhour',
-      class: 'fa fa-github'
-    }, {
       name: 'Google Play',
       link: 'https://play.google.com/store/apps/details?id=ca.hoogit.powerhour',
-      class: 'fa fa-android'
+      icon: 'fa-android',
+      class: 'button-primary'
     }, {
-      name: 'Learn More',
-      link: '#one',
-      class: 'fa fa-chevron-down'
+      name: 'View Source',
+      link: 'http://github.com/jordond/powerhour',
+      icon: 'fa-github',
+      class: '',
     }
   ]
 };
 
 /* eslint indent: 0 */
 const template = [
-  '<div>',
-    '<div class="content">',
-      '<h1><a href="#">{{$ctrl.content.title}}</a></h1>',
-      '<p>{{$ctrl.content.description}}</p>',
-      '<ul class="actions">',
-        '<li ng-repeat="action in $ctrl.content.actions">',
-          '<a href="{{action.link}}" class="button" ng-class="action.class">',
-            '{{action.name}}',
-          '</a>',
-        '</li>',
-      '</ul>',
-    '<div class="image phone">',
-      '<div class="inner">',
-        '<img ng-src="{{$ctrl.content.screenshot}}" alt="Screenshot" />',
+  '<div class="header">',
+    '<div class="container">',
+      '<div class="row">',
+        '<div class="one-half column header-left">',
+          '<h3 class="header-heading">{{$ctrl.content.title}}</h3>',
+          '<h4 class="header-subheading">{{$ctrl.content.description}}</h4>',
+          '<div class="action-buttons" ng-repeat="action in $ctrl.content.actions">',
+            '<a href="{{action.link}}" class="button" ng-class="action.class">',
+              '<i class="fa {{action.icon}}"></i> {{action.name}}',
+            '</a>',
+          '</div>',
+        '</div>',
+        '<div class="one-half column header-right phones">',
+          '<phone ng-repeat="screen in $ctrl.content.screenshots" image="screen"></phone>',
+        '</div>',
       '</div>',
     '</div>',
   '</div>',
