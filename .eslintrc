@@ -20,7 +20,8 @@
     "no-console": 0,
     "no-alert": 0,
     "semi": [2, "always"],
-    "prefer-template": 0
+    "prefer-template": 0,
+    "max-len": 0
   },
   "plugins": [
     "react", "import"
