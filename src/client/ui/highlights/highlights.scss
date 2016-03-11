@@ -1,13 +1,32 @@
 .highlights {
-  background-image: url('../../../../static/images/highlights-bg.jpg');
+  background-image: url('../../../../static/images/highlights-bg-bar.png');
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
   background-color: cadetblue;
+  padding: 8rem 0 7rem;
+  position: relative;
+
+  .highlights-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    opacity: 0.8;
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+  }
 
   .highlight-icon {
     margin-bottom: .5rem;
     color: #11DFC7;
+    &:hover {
+      animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
   }
   .highlight-heading {
     margin-bottom: .3rem;
@@ -15,5 +34,38 @@
   .highlight-description {
     opacity: .8;
     font-weight: 300;
+  }
+}
+
+@media (min-width: 550px) {
+  .highlights {
+    padding: 12rem 0 11rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .highlights {
+    padding: 14rem 0 15rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .highlights {
+    padding: 20rem 0 19rem;
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
   }
 }

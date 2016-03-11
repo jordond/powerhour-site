@@ -31,24 +31,22 @@ const content = {
 
 /* eslint indent: 0 */
 const template = [
-  '<div class="header">',
-    '<div class="container">',
-      '<div class="row">',
-        '<div class="one-half column header-left">',
-          '<h3 class="header-heading">{{$ctrl.content.title}}</h3>',
-          '<h4 class="header-subheading">{{$ctrl.content.description}}</h4>',
-          '<div class="action-buttons" ng-repeat="action in $ctrl.content.actions">',
-            '<a href="{{action.link}}" class="button" ng-class="action.class">',
-              '<i class="fa {{action.icon}}"></i> {{action.name}}',
-            '</a>',
-          '</div>',
-        '</div>',
-        '<div class="one-half column header-right phones">',
-          '<phone ng-repeat="screen in $ctrl.content.screenshots" image="screen"></phone>',
+  '<div class="container">',
+    '<div class="row">',
+      '<div class="one-half column header-left">',
+        '<h3 class="header-heading">{{$ctrl.content.title}}</h3>',
+        '<h4 class="header-subheading">{{$ctrl.content.description}}</h4>',
+        '<div class="action-buttons" ng-repeat="action in $ctrl.content.actions">',
+          '<a href="{{action.link}}" class="button" ng-class="action.class">',
+            '<i class="fa {{action.icon}}"></i> {{action.name}}',
+          '</a>',
         '</div>',
       '</div>',
+      '<div class="one-half column header-right phones">',
+        '<img class="phone" ng-repeat="screen in $ctrl.content.screenshots" ng-src="{{screen}}">',
+      '</div>',
     '</div>',
-  '</div>',
+  '</div>'
 ].join('');
 
 function controller() {

@@ -12,12 +12,13 @@ const content = [{
 }, {
   icon: 'cogs',
   heading: 'Customizable',
-  description: 'Don\'t like one of the presets?  Customize practically every single aspect!'
+  description: 'Don\'t like one of the presets?  Customize practically every single aspect of your game!'
 }];
 
 /* eslint indent: 0 */
 const template = [
   '<div class="highlights">',
+    '<div class="highlights-overlay"></div>',
     '<div class="container">',
       '<div class="row">',
         '<div class="one-third column highlight" ng-repeat="highlight in $ctrl.content">',
