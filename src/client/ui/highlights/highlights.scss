@@ -1,0 +1,19 @@
+.highlights {
+  background-image: url('../../../../static/images/highlights-bg.jpg');
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+  background-color: cadetblue;
+
+  .highlight-icon {
+    margin-bottom: .5rem;
+    color: #11DFC7;
+  }
+  .highlight-heading {
+    margin-bottom: .3rem;
+  }
+  .highlight-description {
+    opacity: .8;
+    font-weight: 300;
+  }
+}

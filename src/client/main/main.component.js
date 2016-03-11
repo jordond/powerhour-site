@@ -4,6 +4,7 @@ import './main.scss';
 const template = [
   '<div>',
     '<header class="section"></header>',
+    '<highlights class="section"></highlights>',
   '</div>'
 ].join('');
 

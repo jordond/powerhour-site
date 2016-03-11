@@ -2,8 +2,7 @@ phone {
   img {
     position: relative;
     max-width: 100%;
-    margin: -3rem auto -12rem;
-
+    margin: 3rem auto -12rem;
   }
   + phone {
     display: none;
@@ -45,11 +44,11 @@ phone {
 
 @media (min-width: 1000px) {
   phone {
-    top: -16rem;
+    top: -23rem;
     max-height: 615px;
 
     + phone {
-      top: -10rem;
+      top: -13rem;
       max-height: 570px;
     }
   }
