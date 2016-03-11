@@ -13,43 +13,72 @@
 
 .phones {
   position: relative;
+  z-index: 2;
+}
+.phone {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+.phone + .phone {
+  display: none;
 }
 
 @media (min-width: 550px) {
-  .header {
-    padding-bottom: 12rem;
-    text-align: left;
-    height: 165px;
-    .header-heading {
-      font-size: 2.4rem;
-    }
-    .header-subheading {
-      font-size: 1.4rem;
-    }
+  .header-heading {
+    font-size: 2.4rem;
+  }
+  .header-subheading {
+    font-size: 1.4rem;
+  }
+  .phone {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+  }
+  .phone + .phone {
+    top: -6rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 338px;
   }
 }
 
 @media (min-width: 750px) {
-  .header {
-    height: 190px;
-    padding: 16rem 0 14rem;
-    .header-heading {
-      font-size: 2.6rem;
-    }
-    .header-subheading {
-      font-size: 1.6rem;
-    }
+  .header-heading {
+    font-size: 2.6rem;
+  }
+  .header-subheading {
+    font-size: 1.6rem;
+  }
+  .phone {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .phone + .phone {
+    top: -12rem;
+    max-height: 472px;
   }
 }
 
 @media (min-width: 1000px) {
-  .header {
-    padding: 22rem 0;
-    .header-heading {
-      font-size: 3.0rem;
-    }
-    .header-subheading {
-      font-size: 2.0rem;
-    }
+  .header-heading {
+    font-size: 3.0rem;
+  }
+  .header-subheading {
+    font-size: 2.0rem;
+  }
+  .phone {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .phone + .phone {
+    top: -14rem;
+    max-height: 570px;
   }
 }
