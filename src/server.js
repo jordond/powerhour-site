@@ -50,9 +50,6 @@ if (config.isProduction) {
 /**
  * Routes
  */
-app.route('/:url(dist|assets|js|fonts|templates)/*')
-  .get((req, res) => res.sendStatus(404));
-
 // All unregistered routes should send index
 app.route('/*')
   .get((req, res) => {
@@ -60,6 +57,9 @@ app.route('/*')
     fs.createReadStream(path.join(config.dir.static, 'dist', 'index.html'))
       .pipe(res);
   });
+
+app.route('/:url(images:dist|assets|js|fonts|templates)/*')
+  .get((req, res) => res.sendStatus(404));
 
 /**
  * Start the server

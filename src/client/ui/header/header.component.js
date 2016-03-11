@@ -1,12 +1,20 @@
 import './header.scss';
 
+import { shuffle } from '../../util/helpers';
+
+const screenshots = [
+  'images/screen_main_framed.png',
+  'images/screen_configure_powerhour_framed.png',
+  'images/screen_configure_colors_framed.png',
+  'images/screen_game_active_shot_framed.png',
+  'images/screen_game_active_round_1_framed.png',
+  'images/screen_game_active_shot_framed.png',
+  'images/screen_game_finish_complete_framed.png'
+];
+
 const content = {
   title: 'Pour Hour for Android',
   description: 'An easy way to keep track during everyone\'s favourite drinking game! ',
-  screenshots: [
-    'images/screen_main_framed.png',
-    'images/screen_game_active_shot_framed.png'
-  ],
   actions: [{
       name: 'Google Play',
       link: 'https://play.google.com/store/apps/details?id=ca.hoogit.powerhour',
@@ -45,6 +53,7 @@ const template = [
 
 function controller() {
   this.content = content;
+  this.content.screenshots = shuffle(screenshots).slice(0, 2);
 }
 
 const header = {
