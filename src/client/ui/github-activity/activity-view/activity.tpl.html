@@ -8,9 +8,14 @@
     </div>
 
     <div class="card">
+      <div class="row event-status">
+        <h4>Status</h4>
+        <status-badge branch="master"></status-badge>
+        <status-badge branch="develop"></status-badge>
+      </div>
       <div class="row event-headers">
         <div class="three columns">
-          <h4 ng-click="$ctrl.logstuff()">Author</h4>
+          <h4>Author</h4>
         </div>
         <div class="nine columns">
           <h4 class="event-header-commit">Commits</h4>
@@ -33,6 +38,7 @@
             <a href="http://github.com/{{ event.repo.name }}/tree/{{ event.payload.ref | branch }}" target="_blank">
               {{ event.payload.ref | branch }}
             </a>
+            <commit-status ng-if="$first" status="event.status"></commit-status>
             <br>
             <span class="commit-message">{{ commit.message }}</span>
           </p>
