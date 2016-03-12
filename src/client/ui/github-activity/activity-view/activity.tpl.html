@@ -22,7 +22,7 @@
         </div>
       </div>
 
-      <div class="row event-body" ng-repeat="event in $ctrl.events">
+      <div class="row event-body" ng-repeat="event in $ctrl.events" ng-class="{'first': $first}">
         <div class="three columns">
           <a href="http://github.com/{{ event.actor.login }}" target="_blank">
             <i class="fa fa-github"></i> {{ event.actor.login }}

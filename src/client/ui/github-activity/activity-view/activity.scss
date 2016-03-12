@@ -20,6 +20,10 @@
     }
   }
   .event-body {
+    display: none;
+    &.first {
+      display: block;
+    }
     &:after {
       content: ' ';
       width: 100%;
@@ -52,7 +56,7 @@
     }
   }
   .card {
-    background: $light;
+    background: $white;
     border-radius: 2px;
     display: block;
     margin: 1rem;
@@ -78,6 +82,7 @@
       }
     }
     .event-body {
+      display: block;
       .event-body-commit {
         text-align: left;
         padding: 0 1rem 0 0;
