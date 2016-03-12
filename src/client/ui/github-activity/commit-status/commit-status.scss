@@ -7,10 +7,10 @@
   text-align: center;
 
   .commit-status-popover {
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba($primary, 0.85);
     border-radius: 5px;
     bottom: 42px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    box-shadow: 0 0 5px rgba($primary, 0.4);
     color: #fff;
     display: none;
     font-size: 12px;
@@ -22,7 +22,7 @@
     z-index: 4;
 
     &:before {
-      border-top: 7px solid rgba(0,0,0,0.85);
+      border-top: 7px solid rgba($primary, 0.85);
       border-right: 7px solid transparent;
       border-left: 7px solid transparent;
       bottom: -7px;
@@ -35,7 +35,7 @@
   }
 
   &:hover {
-    .popover {
+    .commit-status-popover {
       display: block;
       animation: fade-in .3s linear 1, move-up .3s linear 1;
     }
