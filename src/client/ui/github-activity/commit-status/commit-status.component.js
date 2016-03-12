@@ -3,7 +3,10 @@ import './commit-status.scss';
 /* eslint indent: 0 */
 const template = [
   '<span class="commit-status" ng-show="$ctrl.status">',
-    '<i class="commit-status-icon fa" ',
+    '<span class="commit-status-icon" ng-if="$ctrl.useText" ng-class="$ctrl.status.state">',
+      '{{$ctrl.status.state}}',
+    '</span>',
+    '<i class="commit-status-icon fa" ng-if="!$ctrl.useText" ',
         'ng-class="$ctrl.getIcon($ctrl.status.state)">',
     '</i>',
     '<span class="commit-status-popover above">',
@@ -24,7 +27,8 @@ function controller() {
 
 const component = {
   bindings: {
-    status: '='
+    status: '=',
+    useText: '@'
   },
   controller,
   template

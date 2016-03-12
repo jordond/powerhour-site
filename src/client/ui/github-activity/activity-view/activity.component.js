@@ -13,10 +13,10 @@ function controller(githubApi) {
 
 const activityComponent = {
   bindings: {
-    user: '<',
-    limit: '<',
-    repo: '<',
-    enableCommitStatus: '<'
+    user: '@',
+    limit: '@',
+    repo: '@',
+    enableCommitStatus: '@'
   },
   controller,
   templateUrl

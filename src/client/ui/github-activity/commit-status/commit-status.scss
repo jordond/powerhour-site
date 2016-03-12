@@ -42,11 +42,13 @@
   }
 
   .commit-status-icon {
+    font-weight: 400;
+    cursor: pointer;
     &.success {
-      color: material-color('green', '500');
+      color: $accent;
     }
     &.pending {
-      color: yellow;
+      color: $accent;
     }
     &.error {
       color: material-color('red', '500');
