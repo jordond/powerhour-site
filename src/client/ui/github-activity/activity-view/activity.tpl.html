@@ -30,7 +30,7 @@
           <div am-time-ago="event.created_at"></div>
         </div>
         <div class="nine columns event-body-commit">
-          <p ng-repeat="commit in event.payload.commits | filter:{distinct: true} | limitTo: $ctrl.limit || 3">
+          <p ng-repeat="commit in event.payload.commits | filter:{distinct: true} | limitTo: $ctrl.limit || 3 | reverse">
             <a href="http://github.com/{{ event.repo.name }}/commit/{{ commit.sha }}" target="_blank">
               {{ commit.sha | limitTo:7 }}
             </a>

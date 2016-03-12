@@ -4,7 +4,7 @@ import service from './github-api.service';
 import activity from './activity-view/activity.component';
 import buildStatus from './status-badge/status-badge.component';
 import commitStatus from './commit-status/commit-status.component';
-import branchFilter from './branch.filter';
+import { branch, reverse } from './misc.filter';
 
 const dependencies = [];
 
@@ -15,6 +15,7 @@ const mod =
     .component('githubActivity', activity)
     .component('statusBadge', buildStatus)
     .component('commitStatus', commitStatus)
-    .filter('branch', branchFilter);
+    .filter('branch', branch)
+    .filter('reverse', reverse);
 
 export default mod.name;
