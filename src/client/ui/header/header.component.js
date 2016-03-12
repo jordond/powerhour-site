@@ -43,7 +43,7 @@ const template = [
         '</div>',
       '</div>',
       '<div class="one-half column header-right phones">',
-        '<img class="phone" ng-repeat="screen in $ctrl.content.screenshots" ng-src="{{screen}}">',
+        '<img class="phone" ng-repeat="screen in $ctrl.content.screenshots track by $index" ng-src="{{screen}}">',
       '</div>',
     '</div>',
   '</div>'
