@@ -3,7 +3,6 @@
 .activity {
   padding: 1rem 0 1rem;
   text-align: center;
-  background-color: $primary;
   .container {
     padding: 0;
   }
@@ -13,17 +12,14 @@
       font-size: 2rem;
       margin-bottom: 0;
     }
-    .event-header-commit {
-      text-align: left;
-    }
   }
   .event-body {
     .event-body-commit {
-      text-align: left;
+      padding: 0 1rem 0 1rem;
     }
   }
   .card {
-    background: $white;
+    background: $light;
     border-radius: 2px;
     display: block;
     margin: 1rem;
@@ -36,6 +32,14 @@
   .activity {
     .event-headers {
       display: inherit;
+      .event-header-commit {
+        text-align: left;
+      }
+    }
+    .event-body {
+      .event-body-commit {
+        text-align: left;
+      }
     }
   }
 }

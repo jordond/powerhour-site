@@ -11,7 +11,7 @@ const template = [
   '<div>',
     '<header class="section"></header>',
     '<highlights class="section"></highlights>',
-    '<github-activity ',
+    '<github-activity class="section" ',
       'user="$ctrl.github.user"',
       'repo="$ctrl.github.repo"',
       'limit="$ctrl.github.limit">',

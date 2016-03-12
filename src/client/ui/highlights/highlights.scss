@@ -1,9 +1,10 @@
+@import '../../core/_vars';
+
 .highlights {
   background-image: url('../../../../static/images/highlights-bg-bar.png');
   background-size: cover;
-  color: #fff;
+  color: $white;
   padding-bottom: 5rem;
-  background-color: cadetblue;
   padding: 8rem 0 7rem;
   position: relative;
 
@@ -15,12 +16,12 @@
     position: absolute;
     padding: 0;
     opacity: 0.8;
-    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    background-image: linear-gradient(to bottom right,$primaryDark,$accentDark);
   }
 
   .highlight-icon {
     margin-bottom: .5rem;
-    color: #11DFC7;
+    color: $accent;
     &:hover {
       animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
       transform: translate3d(0, 0, 0);

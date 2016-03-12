@@ -1,0 +1,15 @@
+@import '../../../node_modules/sass-material-colors/sass/sass-material-colors';
+
+$primary: material-color('light-blue', '500');
+$primaryDark: material-color('light-blue', '800');
+$accent: material-color('orange', 'a400');
+$accentDark: material-color('orange', 'a700');
+$light: material-color('grey', '100');
+$dark: material-color('grey', '900');
+
+$bg: $primary;
+$bg-alt: $accent;
+$white: #fff;
+$black: #000;
+
+$fontBgColor: $light;

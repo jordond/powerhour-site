@@ -1,3 +1,9 @@
+@import '_vars';
+
+body {
+  background-color: $bg;
+}
+
 .button {
   border-radius: 100px;
 }
