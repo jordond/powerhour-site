@@ -1,9 +1,26 @@
+@import '../../core/_vars';
+
 .header-left {
+  color: $fontBgColor;
   .action-buttons {
     display: inline;
     margin-right: 5px;
     .button {
       padding: 0 20px;
+      font-weight: 200;
+    }
+    .button-primary {
+      background-color: $accent;
+      color: $light;
+      border-color: $accent;
+      font-weight: bold;
+      &:hover {
+        background-color: $accentDark;
+        border-color: $accentDark;
+      }
+    }
+    .button-alt {
+      background-color: $light;
     }
   }
   .header-subheading {

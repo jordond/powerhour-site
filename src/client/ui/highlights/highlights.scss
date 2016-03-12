@@ -1,11 +1,16 @@
+@import '../../core/_vars';
+
+$border: 1px $dark solid;
+
 .highlights {
-  background-image: url('../../../../static/images/highlights-bg-bar.png');
+  background-image: $imgHighlightsBg;
   background-size: cover;
-  color: #fff;
+  color: $white;
   padding-bottom: 5rem;
-  background-color: cadetblue;
   padding: 8rem 0 7rem;
   position: relative;
+  border-top: $border;
+  border-bottom: $border;
 
   .highlights-overlay {
     height: 100%;
@@ -14,13 +19,13 @@
     left: 0;
     position: absolute;
     padding: 0;
-    opacity: 0.8;
-    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: 0.9;
+    background-image: linear-gradient(to bottom right,$primaryDark,$accent);
   }
 
   .highlight-icon {
     margin-bottom: .5rem;
-    color: #11DFC7;
+    color: $accent;
     &:hover {
       animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
       transform: translate3d(0, 0, 0);

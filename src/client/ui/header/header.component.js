@@ -16,7 +16,7 @@ const content = {
   title: 'Pour Hour for Android',
   description: 'An easy way to keep track during everyone\'s favourite drinking game! ',
   actions: [{
-      name: 'Google Play',
+      name: 'Download',
       link: 'https://play.google.com/store/apps/details?id=ca.hoogit.powerhour',
       icon: 'fa-android',
       class: 'button-primary'
@@ -24,7 +24,7 @@ const content = {
       name: 'View Source',
       link: 'http://github.com/jordond/powerhour',
       icon: 'fa-github',
-      class: '',
+      class: 'button-alt',
     }
   ]
 };
@@ -43,7 +43,7 @@ const template = [
         '</div>',
       '</div>',
       '<div class="one-half column header-right phones">',
-        '<img class="phone" ng-repeat="screen in $ctrl.content.screenshots" ng-src="{{screen}}">',
+        '<img class="phone" ng-repeat="screen in $ctrl.content.screenshots track by $index" ng-src="{{screen}}">',
       '</div>',
     '</div>',
   '</div>'

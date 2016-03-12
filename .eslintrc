@@ -22,7 +22,8 @@
     "semi": [2, "always"],
     "prefer-template": 0,
     "max-len": 0,
-    "no-param-reassign": 0
+    "no-param-reassign": 0,
+    "no-unused-vars": 0
   },
   "plugins": [
     "react", "import"

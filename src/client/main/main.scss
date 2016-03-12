@@ -1,6 +1,13 @@
+@import '../core/_vars';
+
 .section {
   padding: 8rem 0 7rem;
   text-align: center;
+}
+header {
+  &.section {
+    background-color: $bg;
+  }
 }
 
 @media (min-width: 550px) {

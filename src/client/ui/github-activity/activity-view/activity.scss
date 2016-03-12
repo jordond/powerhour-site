@@ -1,0 +1,107 @@
+@import '../../../core/_vars';
+
+.activity {
+  padding: 1rem 0 1rem;
+  text-align: center;
+  .container {
+    padding: 0;
+  }
+  .header {
+    padding-top: 2rem;
+    font-weight: 100;
+    margin-bottom: -1rem;
+  }
+  .event-headers {
+    display: none;
+    color: $accent;
+    h4 {
+      font-size: 2rem;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+  }
+  .event-body {
+    display: none;
+    &.first {
+      display: block;
+    }
+    &:after {
+      content: ' ';
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1.5rem;
+    }
+    a {
+      text-decoration: none;
+      color: $primary;
+      &:hover {
+        color: darken($primaryDark, 20%);
+      }
+    }
+    .event-body-commit {
+      padding: 0 1rem 0 1rem;
+      color: $accentDark;
+      font-weight: 600;
+      a {
+        font-weight: 200;
+      }
+      .commit-status {
+        color: $primary;
+      }
+      .commit-message {
+        color: #222;
+        font-weight: 400;
+      }
+    }
+  }
+  .card {
+    background: $white;
+    border-radius: 2px;
+    display: block;
+    margin: 1rem;
+    padding: 2rem 0 .5rem 0;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .activity {
+    .header {
+      padding-top: 0;
+    }
+    .event-headers {
+      display: inherit;
+      .event-header-commit {
+        text-align: left;
+      }
+    }
+    .event-body {
+      display: block;
+      .event-body-commit {
+        text-align: left;
+        padding: 0 1rem 0 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .activity {
+    .container {
+      padding: inherit;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .activity {
+    padding: 2rem 0 2rem;
+  }
+}

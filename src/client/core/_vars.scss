@@ -1,0 +1,22 @@
+@import '../../../node_modules/sass-material-colors/sass/sass-material-colors';
+
+// Base colors
+$primary: material-color('light-blue', '500');
+$primaryDark: material-color('light-blue', '800');
+$accent: material-color('orange', 'a400');
+$accentDark: material-color('orange', 'a700');
+$light: material-color('grey', '100');
+$dark: material-color('grey', '900');
+
+// Background colors
+$bg: $primary;
+$bg-alt: $accent;
+$bg-light: #eeeded;
+$white: #fff;
+$black: #000;
+
+// Font colors
+$fontBgColor: $light;
+
+// Images
+$imgHighlightsBg: url('../../../../static/images/highlights-bg-bar.png');
