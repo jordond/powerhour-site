@@ -21,6 +21,9 @@
     }
     .button-alt {
       background-color: $light;
+      &:hover {
+        background-color: darken($light, 5%);
+      }
     }
   }
   .header-subheading {
