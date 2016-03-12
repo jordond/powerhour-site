@@ -1,14 +1,10 @@
+@import '../../../core/_vars';
+
 .commit-status {
-  background-color: #02bdda;
-  border-radius: 16px;
-  color: #e3fbff;
-  cursor: default;
+  color: $accent;
   display: inline-block;
-  height: 30px;
-  line-height: 30px;
   position: relative;
   text-align: center;
-  width: 30px;
 
   .commit-status-popover {
     background-color: rgba(0,0,0,0.85);
@@ -46,14 +42,14 @@
   }
 
   .commit-status-icon {
-    .success {
-      color: green;
+    &.success {
+      color: material-color('green', '500');
     }
-    .pending {
+    &.pending {
       color: yellow;
     }
-    .error {
-      color: red;
+    &.error {
+      color: material-color('red', '500');
     }
   }
 }

@@ -3,7 +3,7 @@ import './commit-status.scss';
 /* eslint indent: 0 */
 const template = [
   '<span class="commit-status" ng-show="$ctrl.status">',
-    '<i class="commit-status-icon fa {{$ctrl.status.state}}" ',
+    '<i class="commit-status-icon fa" ',
         'ng-class="$ctrl.getIcon($ctrl.status.state)">',
     '</i>',
     '<span class="commit-status-popover above">',
@@ -14,9 +14,9 @@ const template = [
 
 function controller() {
   const iconMap = {
-    success: 'fa-check',
-    pending: 'fa-cog fa-spin',
-    error: 'fa-times'
+    success: 'fa-check success',
+    pending: 'fa-cog fa-spin pending',
+    error: 'fa-times error'
   };
 
   this.getIcon = (state) => iconMap[state];

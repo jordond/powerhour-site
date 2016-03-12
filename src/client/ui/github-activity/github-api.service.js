@@ -10,7 +10,7 @@ class GithubAPI {
     this.$http = $http;
   }
 
-  getActivity(user, repository, limit) {
+  getActivity(user, repository, limit, enableCommitStatus) {
     if (!user || user === angular.isUndefined()) {
       return Promise.reject('No user was supplied');
     }
@@ -23,20 +23,22 @@ class GithubAPI {
     }
     urlArray.push('events');
     return this.$http.get(urlArray.join('/'))
-      .then((response) => this.handleResponse(response, limit))
+      .then((response) => this.handleResponse(response, limit, enableCommitStatus))
       .catch((error) => {
         console.error('XHR Failed for getActivity.\n', angular.toJson(error.data, true));
       });
   }
 
-  handleResponse(response, limit) {
+  handleResponse(response, limit, enableCommitStatus) {
     const maxEvents = limit || eventLimit;
     const events = [];
 
     for (const event of response.data) {
       if (events.length < maxEvents) {
         if (event.type === 'PushEvent') {
-          this.getStatus(event);
+          if (enableCommitStatus) {
+            this.getStatus(event);
+          }
           events.push(event);
         }
       } else {

@@ -38,7 +38,7 @@
             <a href="http://github.com/{{ event.repo.name }}/tree/{{ event.payload.ref | branch }}" target="_blank">
               {{ event.payload.ref | branch }}
             </a>
-            <commit-status ng-if="$first" status="event.status"></commit-status>
+            <commit-status ng-if="$ctrl.enableCommitStatus && $first" status="event.status"></commit-status>
             <br>
             <span class="commit-message">{{ commit.message }}</span>
           </p>
