@@ -6,16 +6,38 @@
   .container {
     padding: 0;
   }
+  .header {
+    padding-top: 2rem;
+    font-weight: 100;
+  }
   .event-headers {
     display: none;
+    color: $accent;
     h4 {
       font-size: 2rem;
       margin-bottom: 0;
+      font-weight: 500;
     }
   }
   .event-body {
+    a {
+      text-decoration: none;
+      color: $primary;
+      &:hover {
+        color: darken($primaryDark, 20%);
+      }
+    }
     .event-body-commit {
       padding: 0 1rem 0 1rem;
+      color: $accentDark;
+      font-weight: 600;
+      a {
+        font-weight: 200;
+      }
+      .commit-message {
+        color: #222;
+        font-weight: 400;
+      }
     }
   }
   .card {
@@ -23,13 +45,21 @@
     border-radius: 2px;
     display: block;
     margin: 1rem;
+    padding: 2rem 0 0 0;
     position: relative;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
   }
 }
 
 @media (min-width: 550px) {
   .activity {
+    .header {
+      padding-top: 0;
+    }
     .event-headers {
       display: inherit;
       .event-header-commit {
@@ -39,6 +69,7 @@
     .event-body {
       .event-body-commit {
         text-align: left;
+        padding: 0 1rem 0 0;
       }
     }
   }

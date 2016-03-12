@@ -1,13 +1,13 @@
 <div class="activity" ng-show="$ctrl.events">
   <div class="container">
 
-    <div class="card">
-      <div class="row">
-        <div class="twelve columns header">
-            <h3>Latest Project Activity</h3>
-        </div>
+    <div class="row">
+      <div class="twelve columns header">
+          <h3>Latest Project Activity</h3>
       </div>
+    </div>
 
+    <div class="card">
       <div class="row event-headers">
         <div class="three columns">
           <h4 ng-click="$ctrl.logstuff()">Author</h4>
@@ -26,16 +26,16 @@
         </div>
         <div class="nine columns event-body-commit">
           <p ng-repeat="commit in event.payload.commits | filter:{distinct: true} | limitTo: $ctrl.limit || 3">
-              <a href="http://github.com/{{ event.repo.name }}/commit/{{ commit.sha }}" target="_blank">
-                {{ commit.sha | limitTo:7 }}
-              </a>
-              &commat;
-              <a href="http://github.com/{{ event.repo.name }}/tree/{{ event.payload.ref | branch }}" target="_blank">
-                {{ event.payload.ref | branch }}
-              </a>
-              <br>
-              {{ commit.message }}
-            </p>
+            <a href="http://github.com/{{ event.repo.name }}/commit/{{ commit.sha }}" target="_blank">
+              {{ commit.sha | limitTo:7 }}
+            </a>
+            &commat;
+            <a href="http://github.com/{{ event.repo.name }}/tree/{{ event.payload.ref | branch }}" target="_blank">
+              {{ event.payload.ref | branch }}
+            </a>
+            <br>
+            <span class="commit-message">{{ commit.message }}</span>
+          </p>
         </div>
       </div>
     </div>

@@ -1,19 +1,23 @@
 import './highlights.scss';
 
-const content = [{
-  icon: 'hashtag',
-  link: 'http://github.com/jordond/powerhour',
-  heading: 'Free & Open Sourced',
-  description: 'Will always be 100% free, and the source is available on GitHub!'
-}, {
-  icon: 'eye',
-  heading: 'Clean & Simple',
-  description: 'A beutiful UI with bright and vibrant colors, designed for simplicity.'
-}, {
-  icon: 'cogs',
-  heading: 'Customizable',
-  description: 'Don\'t like one of the presets?  Customize practically every single aspect of your game!'
-}];
+const content = [
+  {
+    icon: 'eye',
+    heading: 'Clean & Simple',
+    description: 'A beutiful UI with bright and vibrant colors, designed for simplicity.'
+  },
+  {
+    icon: 'cogs',
+    heading: 'Customizable',
+    description: 'Don\'t like one of the presets?  Customize practically every single aspect of your game!'
+  },
+  {
+    icon: 'hashtag',
+    link: 'http://github.com/jordond/powerhour',
+    heading: 'Free & Open',
+    description: 'Will always be 100% free, and the source is available on GitHub!'
+  }
+];
 
 /* eslint indent: 0 */
 const template = [

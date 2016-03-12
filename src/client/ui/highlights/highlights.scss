@@ -1,12 +1,16 @@
 @import '../../core/_vars';
 
+$border: 1px $dark solid;
+
 .highlights {
-  background-image: url('../../../../static/images/highlights-bg-bar.png');
+  background-image: $imgHighlightsBg;
   background-size: cover;
   color: $white;
   padding-bottom: 5rem;
   padding: 8rem 0 7rem;
   position: relative;
+  border-top: $border;
+  border-bottom: $border;
 
   .highlights-overlay {
     height: 100%;
@@ -15,8 +19,8 @@
     left: 0;
     position: absolute;
     padding: 0;
-    opacity: 0.8;
-    background-image: linear-gradient(to bottom right,$primaryDark,$accentDark);
+    opacity: 0.9;
+    background-image: linear-gradient(to bottom right,$primaryDark,$accent);
   }
 
   .highlight-icon {
