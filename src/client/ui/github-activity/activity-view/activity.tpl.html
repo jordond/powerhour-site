@@ -1,40 +1,42 @@
 <div class="activity" ng-show="$ctrl.events">
   <div class="container">
 
-    <div class="row">
-      <div class="twelve columns header">
-          <h3>Latest Project Activity</h3>
+    <div class="card">
+      <div class="row">
+        <div class="twelve columns header">
+            <h3>Latest Project Activity</h3>
+        </div>
       </div>
-    </div>
 
-    <div class="row event-headers">
-      <div class="three columns">
-        <h4 ng-click="$ctrl.logstuff()">Author</h4>
+      <div class="row event-headers">
+        <div class="three columns">
+          <h4 ng-click="$ctrl.logstuff()">Author</h4>
+        </div>
+        <div class="nine columns">
+          <h4 class="event-header-commit">Commits</h4>
+        </div>
       </div>
-      <div class="nine columns">
-        <h4>Commits</h4>
-      </div>
-    </div>
 
-    <div class="row event-body" ng-repeat="event in $ctrl.events">
-      <div class="three columns">
-        <a href="http://github.com/{{ event.actor.login }}" target="_blank">
-          <i class="fa fa-github"></i> {{ event.actor.login }}
-        </a>
-        <div am-time-ago="event.created_at"></div>
-      </div>
-      <div class="nine columns">
-        <p ng-repeat="commit in event.payload.commits | filter:{distinct: true} | limitTo: $ctrl.limit || 3">
-            <a href="http://github.com/{{ event.repo.name }}/commit/{{ commit.sha }}" target="_blank">
-              {{ commit.sha | limitTo:7 }}
-            </a>
-            &commat;
-            <a href="http://github.com/{{ event.repo.name }}/tree/{{ event.payload.ref | branch }}" target="_blank">
-              {{ event.payload.ref | branch }}
-            </a>
-            <br>
-            {{ commit.message }}
-          </p>
+      <div class="row event-body" ng-repeat="event in $ctrl.events">
+        <div class="three columns">
+          <a href="http://github.com/{{ event.actor.login }}" target="_blank">
+            <i class="fa fa-github"></i> {{ event.actor.login }}
+          </a>
+          <div am-time-ago="event.created_at"></div>
+        </div>
+        <div class="nine columns event-body-commit">
+          <p ng-repeat="commit in event.payload.commits | filter:{distinct: true} | limitTo: $ctrl.limit || 3">
+              <a href="http://github.com/{{ event.repo.name }}/commit/{{ commit.sha }}" target="_blank">
+                {{ commit.sha | limitTo:7 }}
+              </a>
+              &commat;
+              <a href="http://github.com/{{ event.repo.name }}/tree/{{ event.payload.ref | branch }}" target="_blank">
+                {{ event.payload.ref | branch }}
+              </a>
+              <br>
+              {{ commit.message }}
+            </p>
+        </div>
       </div>
     </div>
 

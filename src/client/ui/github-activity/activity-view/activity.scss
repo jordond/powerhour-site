@@ -1,0 +1,55 @@
+@import '../../../core/_vars';
+
+.activity {
+  padding: 1rem 0 1rem;
+  text-align: center;
+  background-color: $primary;
+  .container {
+    padding: 0;
+  }
+  .event-headers {
+    display: none;
+    h4 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+    .event-header-commit {
+      text-align: left;
+    }
+  }
+  .event-body {
+    .event-body-commit {
+      text-align: left;
+    }
+  }
+  .card {
+    background: $white;
+    border-radius: 2px;
+    display: block;
+    margin: 1rem;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+}
+
+@media (min-width: 550px) {
+  .activity {
+    .event-headers {
+      display: inherit;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .activity {
+    .container {
+      padding: inherit;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .activity {
+    padding: 2rem 0 2rem;
+  }
+}
