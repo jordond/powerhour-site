@@ -4,6 +4,7 @@
   padding: 0 0 4rem;
   text-align: center;
   background-color: $bg-light;
+  border-top: solid 2px $borderGrey;;
   .container {
     padding: 0;
   }
@@ -23,6 +24,7 @@
   }
   .event-body {
     display: none;
+    color: $fontBgBlack;
     &.first {
       display: block;
     }
@@ -52,7 +54,7 @@
         color: $primary;
       }
       .commit-message {
-        color: #222;
+        color: $fontBgBlack;
         font-weight: 400;
       }
     }
@@ -74,6 +76,7 @@
 
 @media (min-width: 550px) {
   .activity {
+    padding: 1rem 0 3rem;
     .header {
       padding-top: 0;
     }
@@ -98,11 +101,5 @@
     .container {
       padding: inherit;
     }
-  }
-}
-
-@media (min-width: 1000px) {
-  .activity {
-    padding: 1rem 0 3rem;
   }
 }

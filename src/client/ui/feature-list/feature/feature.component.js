@@ -2,11 +2,11 @@ import './feature.scss';
 
 /* eslint indent: 0 */
 const template = [
-  '<div class="row feature" ng-class="{reverse: $ctrl.reverse}">',
-    '<div class="three columns feature_image">',
+  '<div class="feature" ng-class="{reverse: $ctrl.reverse}">',
+    '<div class="one-third three columns feature_image">',
       '<img class="u-max-full-width" ng-src="{{$ctrl.info.image}}" alt="{{$ctrl.info.header}}">',
     '</div>',
-    '<div class="eight columns feature_text">',
+    '<div class="ten columns feature_text">',
       '<h3 class="feature_text_header">',
         '{{$ctrl.info.header}}',
       '</h3>',
