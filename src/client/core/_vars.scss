@@ -11,7 +11,7 @@ $dark: material-color('grey', '900');
 // Background colors
 $bg: $primary;
 $bg-alt: $accent;
-$bg-light: #eeeded;
+$bg-light: material-color('grey', '50');
 $white: #fff;
 $black: #000;
 

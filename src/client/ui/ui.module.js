@@ -1,17 +1,23 @@
 import angular from 'angular';
-
 import moment from 'moment';
 import angularMoment from 'angular-moment';
 
 import core from '../core/core.module';
-import githubActivity from './github-activity/github-activity.module';
 
+/** UI sub-modules */
+import githubActivity from './github-activity/github-activity.module';
+import featureList from './feature-list/feature-list.module';
+
+/** UI components */
 import header from './header/header.component';
 import highlights from './highlights/highlights.component';
 
 const dependencies = [
   core,
+
   githubActivity,
+  featureList,
+
   angularMoment.name
 ];
 

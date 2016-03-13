@@ -1,0 +1,13 @@
+.feature {
+  display: flex;
+  align-items: center;
+  &.reverse {
+    flex-direction: row-reverse;
+    .feature_image {
+      margin: 0 0 0 3em;
+    }
+    .feature_text {
+      text-align: right;
+    }
+  }
+}
