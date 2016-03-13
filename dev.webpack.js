@@ -13,7 +13,7 @@ module.exports = {
   devtool: 'inline-source-map',
   context: __dirname,
   entry: {
-    vendor: ['angular', 'angular-ui-router'],
+    vendor: ['angular', 'angular-ui-router', 'moment'],
     app: entryJS
   },
   output: {

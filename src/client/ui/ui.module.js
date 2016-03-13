@@ -1,6 +1,4 @@
 import angular from 'angular';
-import moment from 'moment';
-import angularMoment from 'angular-moment';
 
 import core from '../core/core.module';
 
@@ -16,9 +14,7 @@ const dependencies = [
   core,
 
   githubActivity,
-  featureList,
-
-  angularMoment.name
+  featureList
 ];
 
 const mod =

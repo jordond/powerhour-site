@@ -3,6 +3,10 @@ import { shuffle } from '../../util/helpers';
 import './feature-list.scss';
 import placeholder from './images/placeholder.png';
 
+// TODO conver to dynamic require
+import androidWear from './images/feature_android_wear.png';
+import microphone from './images/feature_microphone.png';
+
 const content = [
   {
     header: 'Fusce non massa',
@@ -17,12 +21,12 @@ const content = [
   {
     header: 'Android Wear Support',
     description: 'That\'s right! A feature that was requsted by no one has been added to Power Hour in the latest update.  Now when you reach the upper hundred levels and can no longer bother to look at your phone, don\'t fret because a simple glance at your wrist will tell you all you need to know!',
-    image: placeholder
+    image: androidWear
   },
   {
     header: 'Record your own alarm',
     description: 'If you do not like one of the many included alarm sounds do not worry!  With a tap of the microphone button, you will be able to record your very own alarm.  So think of something clever or silly that you want to hear almost one hundred times!',
-    image: placeholder
+    image: microphone
   }
 ];
 

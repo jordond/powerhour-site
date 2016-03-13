@@ -7,10 +7,9 @@
     border-radius: 100%;
     margin: 0 0 3em 0;
     display: block;
-    box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
+    box-shadow: 0 0 0 4px $white, 0 0 0 6px #e6e6e6;
     border: 0;
     position: relative;
-    overflow: hidden;
     img {
       border-radius: 100%;
       width: 100%;
@@ -32,6 +31,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    .feature_image {
+      width: 35%;
+    }
   }
 }
 
