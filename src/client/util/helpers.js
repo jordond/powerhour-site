@@ -18,3 +18,11 @@ export function shuffle(array) {
   }
   return array;
 }
+
+/**
+ * Require all the files in a given folder context
+ * ie Require a subdirectory of images
+ */
+export function requireAll(context) {
+  return context.keys().map(context);
+}
