@@ -3,7 +3,7 @@
 $border: 1px $dark solid;
 
 .highlights {
-  background-image: $imgHighlightsBg;
+  background-image: url('./highlights-bg.png');
   background-size: cover;
   color: $white;
   padding-bottom: 5rem;
