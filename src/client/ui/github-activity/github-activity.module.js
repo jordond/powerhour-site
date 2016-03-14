@@ -1,3 +1,7 @@
+/**
+ * Contained module that gets information from the
+ * GitHub api and displays it nicely as a card
+ */
 import angular from 'angular';
 
 import angularMoment from 'angular-moment';

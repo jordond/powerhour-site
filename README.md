@@ -49,8 +49,8 @@ Site is live @ [powerhourapp.ca](https://powerhourapp.ca)
 
 ## To Do
 - TESTS
-- Build front-end.
-- Dockerize website for easier managment.
+- ~~Build front-end.~~
+- ~~Dockerize website for easier managment.~~
 - ~~Add to my Jenkins instance.~~
 
 # Development
