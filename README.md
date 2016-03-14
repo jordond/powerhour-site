@@ -5,6 +5,8 @@ Website front end for my Power Hour Android applicaion, the source for which can
 
 <a href="https://play.google.com/store/apps/details?id=ca.hoogit.powerhour&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" width="150px" /></a>
 
+Site is live @ [powerhourapp.ca](https://powerhourapp.ca)
+
 # Install
 1. Download and extract latest compiled files from [here](https://ci.hoogit.ca/job/PowerHour.Site.master/lastSuccessfulBuild/artifact/*zip*/archive.zip).
 2. Change into directory and run `NODE_ENV=production npm install`.
