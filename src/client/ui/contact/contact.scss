@@ -1,0 +1,49 @@
+@import '../../core/_vars';
+
+.contact {
+  padding: 4.5em 0 2.5em 0;
+  background: material-color('grey', '100');
+  color: #b0b0b0;
+  text-align: center;
+  border-top: solid 3px $borderGrey;
+  .contact_icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 1rem 0;
+    .ph-popover {
+      margin-bottom: 2rem;
+      width: 7rem;
+      left: -25px;
+    }
+    li {
+      display: inline-block;
+      padding: 0 2.5rem 0 0;
+      font-size: 4rem;
+      position: relative;
+      &:last-child {
+        padding: 0;
+      }
+      &:hover {
+        color: $primary;
+        @include popover();
+      }
+    }
+  }
+  a {
+    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: $primary;
+    }
+  }
+  .copyright {
+    font-size: 0.9em;
+    margin: 0 0 2em 0;
+    a {
+      border-bottom: dotted 1px;
+      border-bottom-color: #c6c6c6;
+    }
+  }
+}

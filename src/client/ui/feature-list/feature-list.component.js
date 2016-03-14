@@ -8,7 +8,7 @@ import androidWear from './images/feature_android_wear.png';
 import microphone from './images/feature_microphone.png';
 
 const content = {
-  footer: 'More coming soon...',
+  footer: 'Keep an eye out for more...',
   features: [
     {
       header: 'Multiple game presets',

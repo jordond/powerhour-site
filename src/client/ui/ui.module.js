@@ -9,6 +9,7 @@ import featureList from './feature-list/feature-list.module';
 /** UI components */
 import header from './header/header.component';
 import highlights from './highlights/highlights.component';
+import contact from './contact/contact.component';
 
 const dependencies = [
   core,
@@ -21,6 +22,7 @@ const mod =
   angular
     .module('app.ui', dependencies)
     .component('header', header)
-    .component('highlights', highlights);
+    .component('highlights', highlights)
+    .component('contact', contact);
 
 export default mod.name;

@@ -12,6 +12,7 @@ const template = [
       'enable-commit-status="true">',
     '</github-activity>',
     '<feature-list></feature-list>',
+    '<contact></contact>',
   '</div>'
 ].join('');
 
