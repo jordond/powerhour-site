@@ -33,6 +33,7 @@ class GithubAPI {
       return Promise.reject('No user was supplied');
     }
 
+    // Decided which url to use based on passed in parameters
     let urlArray = [apiHost];
     if (repository) {
       urlArray = urlArray.concat(['repos', user, repository]);

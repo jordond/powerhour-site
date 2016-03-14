@@ -1,3 +1,9 @@
+/**
+ * Displays a list of features that can easibly edited.
+ *
+ * Just add a new object to the features array.  Picture's are imported
+ * and handled by webpack.  No need to place them in the static folder
+ */
 import { shuffle } from '../../util/helpers';
 
 import './feature-list.scss';
