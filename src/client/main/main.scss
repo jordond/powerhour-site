@@ -1,9 +1,54 @@
-@import '../core/_vars';
+@import './_vars';
+
+body {
+  background-color: $white;
+}
+
+.button {
+  border-radius: 100px;
+}
+
+h3 {
+  color: $fontBgBlack;
+}
+
+a {
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
+.ph-popover {
+  background-color: rgba($primary, 0.85);
+  border-radius: 5px;
+  bottom: 42px;
+  box-shadow: 0 0 5px rgba($primary, 0.4);
+  color: #fff;
+  display: none;
+  font-size: 12px;
+  font-family: 'Helvetica',sans-serif;
+  left: -95px;
+  padding: 7px 10px;
+  position: absolute;
+  width: 200px;
+  z-index: 4;
+
+  &:before {
+    border-top: 7px solid rgba($primary, 0.85);
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    bottom: -7px;
+    content: '';
+    display: block;
+    left: 50%;
+    margin-left: -7px;
+    position: absolute;
+  }
+}
 
 .section {
   padding: 6rem 0 7rem;
   text-align: center;
 }
+
 header {
   &.section {
     background-color: $bg;

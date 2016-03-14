@@ -3,7 +3,6 @@ import angular from 'angular';
 import 'font-awesome/css/font-awesome.css';
 import 'skeleton-css/css/skeleton.css';
 import 'normalize.css/normalize';
-import './core';
 
 // Core vendor libs
 import ngAnimate from 'angular-animate';
