@@ -7,7 +7,7 @@ const template = [
     '<highlights class="section"></highlights>',
     '<github-activity class="section" ',
       'user="jordond" ',
-      'repo="powerhour-site" ',
+      'repo="powerhour" ',
       'limit="4" ',
       'enable-commit-status="true">',
     '</github-activity>',
