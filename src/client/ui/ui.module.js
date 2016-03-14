@@ -1,3 +1,9 @@
+/**
+ * Module which contains all the sections of the ui
+ *
+ * Contains ui submodules for more complex components
+ */
+
 import angular from 'angular';
 
 import core from '../core/core.module';

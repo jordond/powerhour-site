@@ -1,3 +1,8 @@
+/**
+ * Main and only route
+ *
+ * loads the Main.component
+ */
 function getStates() {
   return [
     {

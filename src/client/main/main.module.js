@@ -1,3 +1,10 @@
+/**
+ * Main Section
+ *
+ * Consists of a single component that uses directives/components from
+ * the UI module
+ */
+
 import angular from 'angular';
 
 import core from '../core/core.module';

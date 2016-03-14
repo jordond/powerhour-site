@@ -1,3 +1,7 @@
+/**
+ * Core module which contains all of the apps deps
+ */
+
 import angular from 'angular';
 
 import 'font-awesome/css/font-awesome.css';
