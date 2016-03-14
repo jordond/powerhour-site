@@ -22,6 +22,3 @@ deploy:
       - docker restart powerhour
     when:
       branch: master
-branches:
-  - master
-  - develop

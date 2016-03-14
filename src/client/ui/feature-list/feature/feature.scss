@@ -1,0 +1,59 @@
+@import '../../../core/_vars';
+
+.feature {
+  display: block;
+  text-align: center;
+  .feature_image {
+    border-radius: 100%;
+    margin: 0 0 3em 0;
+    display: block;
+    box-shadow: 0 0 0 4px $white, 0 0 0 6px #e6e6e6;
+    border: 0;
+    position: relative;
+    img {
+      border-radius: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+  .feature_text {
+    h3 {
+      line-height: 1.5em;
+      font-size: 1.5em;
+      font-weight: normal;
+    }
+    color: $fontBgBlack;
+  }
+}
+
+@media (min-width: 555px) {
+  .feature {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .feature_image {
+      width: 35%;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .feature {
+    flex-direction: inherit;
+    .feature_image {
+      margin: 0 3em 0 0;
+    }
+    .feature_text {
+      text-align: left;
+    }
+    &.reverse {
+      flex-direction: row-reverse;
+      .feature_image {
+        margin: 0 0 0 3em;
+      }
+      .feature_text {
+        text-align: right;
+      }
+    }
+  }
+}

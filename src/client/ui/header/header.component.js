@@ -1,16 +1,9 @@
 import './header.scss';
 
-import { shuffle } from '../../util/helpers';
+import { shuffle, requireAll } from '../../util/helpers';
 
-const screenshots = [
-  'images/screen_main_framed.png',
-  'images/screen_configure_powerhour_framed.png',
-  'images/screen_configure_colors_framed.png',
-  'images/screen_game_active_shot_framed.png',
-  'images/screen_game_active_round_1_framed.png',
-  'images/screen_game_active_shot_framed.png',
-  'images/screen_game_finish_complete_framed.png'
-];
+const context = require.context('./screens', true, /^\.\/.*\.png$/);
+const screenshots = requireAll(context);
 
 const content = {
   title: 'Pour Hour for Android',

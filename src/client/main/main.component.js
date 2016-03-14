@@ -11,6 +11,7 @@ const template = [
       'limit="4" ',
       'enable-commit-status="true">',
     '</github-activity>',
+    '<feature-list></feature-list>',
   '</div>'
 ].join('');
 
