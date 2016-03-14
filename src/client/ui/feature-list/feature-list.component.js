@@ -1,26 +1,26 @@
 import { shuffle } from '../../util/helpers';
 
 import './feature-list.scss';
-import placeholder from './images/placeholder.png';
 
-// TODO conver to dynamic require
+import choices from './images/feature_choices.png';
+import mrDrunk from './images/feature_drunk.png';
 import androidWear from './images/feature_android_wear.png';
 import microphone from './images/feature_microphone.png';
 
 const content = [
   {
-    header: 'Fusce non massa',
-    description: 'Suspendisse porttitor enim eros, non suscipit eros eleifend sit amet. In ornare mollis finibus. Cras ornare nunc et dolor mollis tincidunt. Quisque consequat tortor orci, quis dictum ex volutpat sit amet. Nullam pharetra velit sollicitudin arcu molestie eleifend. Morbi gravida efficitur nibh, quis pulvinar nibh lobortis a. Mauris eget fringilla lectus, in sodales lacus. Integer nec odio iaculis nulla blandit euismod eget eget quam. Sed sit amet nisi a augue pharetra dapibus.',
-    image: placeholder
+    header: 'Multiple game presets',
+    description: 'Choose from one of the preset game modes. Which include Power Hour, Century Club, or Spartan Mode.  If none of those please you, or you\'re looking for a quick (or long) game. You can create your own game mode, or edit one of the existing presets.',
+    image: choices
   },
   {
-    header: 'Suspendisse porttitor',
-    description: 'Fusce non massa nec purus elementum suscipit. Curabitur et quam purus. Mauris porta cursus augue, placerat facilisis mauris tincidunt rutrum. Fusce volutpat suscipit malesuada. Nam rhoncus risus nec purus ultrices, a laoreet magna consectetur. Nullam elit nulla, porttitor in semper finibus, ornare vitae magna. Morbi convallis ipsum in lectus pretium suscipit.',
-    image: placeholder
+    header: 'Worry free!',
+    description: 'If at some point throughout the game, in a drunken haze you accidentally close the app.  Do not fear!  The game will continue to run in the background, and when it is time for a shot, it will be brought to focus and notify you.  So if you need to turn your screen off to save that precious battery, go right ahead!',
+    image: mrDrunk
   },
   {
     header: 'Android Wear Support',
-    description: 'That\'s right! A feature that was requsted by no one has been added to Power Hour in the latest update.  Now when you reach the upper hundred levels and can no longer bother to look at your phone, don\'t fret because a simple glance at your wrist will tell you all you need to know!',
+    description: 'That\'s right! A feature that was requested by no one has been added to Power Hour in the latest update.  Now when you reach the upper hundred levels and can no longer bother to look at your phone, don\'t fret because a simple glance at your wrist will tell you all you need to know!',
     image: androidWear
   },
   {
