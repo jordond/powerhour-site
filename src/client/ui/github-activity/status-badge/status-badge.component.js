@@ -1,5 +1,3 @@
-import './status-badge.scss';
-
 /* eslint indent: 0 */
 const template = [
   '<a class="status-badge" about="_blank" ',

@@ -20,3 +20,11 @@ $borderGrey: #eeeeee;
 // Font colors
 $fontBgColor: $light;
 $fontBgBlack: #828282;
+
+
+@mixin popover() {
+  .ph-popover {
+    display: block;
+    animation: fade-in .3s linear 1, move-up .3s linear 1;
+  }
+}

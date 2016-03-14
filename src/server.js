@@ -1,3 +1,11 @@
+/**
+ * A Simple node server written in ES6 intended to launch an express server.
+ *
+ * The root route is sent the angular html, with the static director set to
+ * 'static/`, compiled angular files should be located in 'static/dist`.
+ * Ensure that they have been compiled by running `npm build`
+ */
+
 import * as path from 'path';
 import * as http from 'http';
 import * as fs from 'fs';
@@ -50,6 +58,7 @@ if (config.isProduction) {
 /**
  * Routes
  */
+
 // All unregistered routes should send index
 app.route('/*')
   .get((req, res) => {
@@ -58,6 +67,7 @@ app.route('/*')
       .pipe(res);
   });
 
+// Any missing assets will return a 404 instead of index
 app.route('/:url(images:dist|assets|js|fonts|templates)/*')
   .get((req, res) => res.sendStatus(404));
 

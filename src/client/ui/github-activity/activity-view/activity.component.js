@@ -1,3 +1,6 @@
+/**
+ * Main view for the GitHub activity tracker
+ */
 import './activity.scss';
 import templateUrl from './activity.tpl.html';
 

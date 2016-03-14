@@ -9,7 +9,7 @@ const template = [
     '<i class="commit-status-icon fa" ng-if="!$ctrl.useText" ',
         'ng-class="$ctrl.getIcon($ctrl.status.state)">',
     '</i>',
-    '<span class="commit-status-popover above">',
+    '<span class="ph-popover">',
       '{{$ctrl.status.description}}',
     '</span>',
   '</span>'

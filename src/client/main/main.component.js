@@ -1,3 +1,7 @@
+/**
+ * Container component that displays each divided part from
+ * UI components.
+ */
 import './main.scss';
 
 /* eslint indent: 0 */
@@ -12,6 +16,7 @@ const template = [
       'enable-commit-status="true">',
     '</github-activity>',
     '<feature-list></feature-list>',
+    '<footer></footer>',
   '</div>'
 ].join('');
 

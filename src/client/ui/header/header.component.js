@@ -30,7 +30,7 @@ const template = [
         '<h3 class="header-heading">{{$ctrl.content.title}}</h3>',
         '<h4 class="header-subheading">{{$ctrl.content.description}}</h4>',
         '<div class="action-buttons" ng-repeat="action in $ctrl.content.actions">',
-          '<a href="{{action.link}}" class="button" ng-class="action.class">',
+          '<a href="{{action.link}}" class="button" ng-class="action.class" target="_blank">',
             '<i class="fa {{action.icon}}"></i> {{action.name}}',
           '</a>',
         '</div>',
