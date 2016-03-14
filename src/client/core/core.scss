@@ -1,9 +1,13 @@
 @import '_vars';
 
 body {
-  background-color: $bg-light;
+  background-color: $white;
 }
 
 .button {
   border-radius: 100px;
+}
+
+h3 {
+  color: $fontBgBlack;
 }

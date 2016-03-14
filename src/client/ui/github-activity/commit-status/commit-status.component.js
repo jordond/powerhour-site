@@ -2,7 +2,7 @@ import './commit-status.scss';
 
 /* eslint indent: 0 */
 const template = [
-  '<span class="commit-status" ng-show="$ctrl.status">',
+  '<span class="commit-status" ng-show="$ctrl.status.state">',
     '<span class="commit-status-icon" ng-if="$ctrl.useText" ng-class="$ctrl.status.state">',
       '{{$ctrl.status.state}}',
     '</span>',

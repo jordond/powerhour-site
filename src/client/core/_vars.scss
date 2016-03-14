@@ -11,12 +11,12 @@ $dark: material-color('grey', '900');
 // Background colors
 $bg: $primary;
 $bg-alt: $accent;
-$bg-light: #eeeded;
+$bg-light: material-color('grey', '50');
 $white: #fff;
 $black: #000;
 
+$borderGrey: #eeeeee;
+
 // Font colors
 $fontBgColor: $light;
-
-// Images
-$imgHighlightsBg: url('../../../../static/images/highlights-bg-bar.png');
+$fontBgBlack: #828282;

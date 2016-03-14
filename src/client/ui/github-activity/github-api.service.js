@@ -40,6 +40,7 @@ class GithubAPI {
       urlArray = urlArray.concat(['users', user]);
     }
     urlArray.push('events');
+
     return this.$http.get(urlArray.join('/'))
       .then((response) => this.handleResponse(response, limit, enableCommitStatus))
       .catch((error) => {
@@ -63,7 +64,7 @@ class GithubAPI {
 
     for (const event of response.data) {
       if (events.length < maxEvents) {
-        if (event.type === 'PushEvent') {
+        if (event.type === 'PushEvent' && event.payload.distinct_size > 0) {
           if (enableCommitStatus) {
             this.getStatus(event);
           }

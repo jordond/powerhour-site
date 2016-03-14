@@ -2,6 +2,9 @@
 
 .header-left {
   color: $fontBgColor;
+  .header-heading {
+    color: $fontBgColor;
+  }
   .action-buttons {
     display: inline;
     margin-right: 5px;

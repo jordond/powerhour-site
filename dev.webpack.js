@@ -13,7 +13,7 @@ module.exports = {
   devtool: 'inline-source-map',
   context: __dirname,
   entry: {
-    vendor: ['angular', 'angular-ui-router'],
+    vendor: ['angular', 'angular-ui-router', 'moment'],
     app: entryJS
   },
   output: {
@@ -44,7 +44,7 @@ module.exports = {
       loader: 'file?name=fonts/[name].[ext]'
     }, {
       test: /\.png$/,
-      loader: 'url-loader?limit=100000&mimetype=image/png'
+      loader: 'url-loader?name=images/[name].png&limit=100000&mimetype=image/png'
     }, {
       test: /\.jpg$/,
       loader: 'file-loader'
