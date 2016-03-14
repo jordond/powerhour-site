@@ -9,7 +9,7 @@ import featureList from './feature-list/feature-list.module';
 /** UI components */
 import header from './header/header.component';
 import highlights from './highlights/highlights.component';
-import contact from './contact/contact.component';
+import footer from './footer/footer.component';
 
 const dependencies = [
   core,
@@ -23,6 +23,6 @@ const mod =
     .module('app.ui', dependencies)
     .component('header', header)
     .component('highlights', highlights)
-    .component('contact', contact);
+    .component('footer', footer);
 
 export default mod.name;

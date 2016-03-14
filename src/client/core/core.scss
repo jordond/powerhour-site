@@ -12,6 +12,10 @@ h3 {
   color: $fontBgBlack;
 }
 
+a {
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
 .ph-popover {
   background-color: rgba($primary, 0.85);
   border-radius: 5px;

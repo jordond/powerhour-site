@@ -1,12 +1,12 @@
 @import '../../core/_vars';
 
-.contact {
+.footer {
   padding: 4.5em 0 2.5em 0;
   background: material-color('grey', '100');
   color: #b0b0b0;
   text-align: center;
   border-top: solid 3px $borderGrey;
-  .contact_icons {
+  .footer_icons {
     cursor: default;
     list-style: none;
     padding-left: 0;

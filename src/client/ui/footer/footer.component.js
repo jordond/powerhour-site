@@ -1,4 +1,4 @@
-import './contact.scss';
+import './footer.scss';
 
 const content = {
   items: [
@@ -15,7 +15,7 @@ const content = {
     {
       url: 'mailto:contact@powerhourapp.ca',
       icon: 'envelope',
-      popover: 'Email'
+      popover: 'Contact'
     },
     {
       url: 'https://github.com/jordond/powerhour',
@@ -40,9 +40,9 @@ const content = {
 
 /* eslint indent: 0 */
 const template = [
-  '<div class="contact">',
-    '<ul class="contact_icons">',
-      '<li class="contact_icons_icon" ',
+  '<div class="footer">',
+    '<ul class="footer_icons">',
+      '<li class="footer_icons_icon" ',
           'ng-repeat="item in $ctrl.content.items">',
         '<a class="icon" href="{{item.url}}" target="_blank">',
           '<i class="fa fa-{{item.icon}}"></i>',
