@@ -6,7 +6,7 @@ const context = require.context('./screens', true, /^\.\/.*\.png$/);
 const screenshots = requireAll(context);
 
 const content = {
-  title: 'Pour Hour for Android',
+  title: 'Power Hour for Android',
   description: 'An easy way to keep track during everyone\'s favourite drinking game! ',
   actions: [{
       name: 'Download',
