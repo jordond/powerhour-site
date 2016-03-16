@@ -45,7 +45,7 @@ const template = [
       '<li class="footer_icons_icon" ',
           'ng-repeat="item in $ctrl.content.items">',
         '<a class="icon" href="{{item.url}}" target="_blank">',
-          '<i class="fa fa-{{item.icon}}"></i>',
+          '<i class="fa fa-fw fa-{{item.icon}}"></i>',
         '</a>',
         '<span class="ph-popover">{{item.popover}}</span>',
       '</li>',

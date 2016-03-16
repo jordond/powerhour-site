@@ -11,6 +11,12 @@ $border: 1px $dark solid;
   position: relative;
   border-top: $border;
 
+  .highlights-about {
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+
   .highlights-overlay {
     height: 100%;
     width: 100%;
@@ -45,6 +51,12 @@ $border: 1px $dark solid;
   .highlights {
     padding: 7rem 0 6rem;
 
+    .highlights-about {
+      h4 {
+        padding-bottom: 5rem;
+      }
+    }
+
     .highlight-heading {
       font-size: 2rem;
     }
@@ -53,8 +65,13 @@ $border: 1px $dark solid;
 
 @media (min-width: 750px) {
   .highlights {
-    padding: 10rem 0 11rem;
+    padding: 5rem 0 11rem;
 
+    .highlights-about {
+      h4 {
+        padding-bottom: 4rem;
+      }
+    }
     .highlight-heading {
       font-size: 2.5rem;
     }
@@ -63,7 +80,7 @@ $border: 1px $dark solid;
 
 @media (min-width: 1000px) {
   .highlights {
-    padding: 15rem 0 15rem;
+    padding: 10rem 0 15rem;
   }
 }
 

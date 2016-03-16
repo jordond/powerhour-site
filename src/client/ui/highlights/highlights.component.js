@@ -1,23 +1,26 @@
 import './highlights.scss';
 
-const content = [
-  {
-    icon: 'eye',
-    heading: 'Clean & Simple',
-    description: 'A beutiful UI with bright and vibrant colors, designed for simplicity.'
-  },
-  {
-    icon: 'cogs',
-    heading: 'Customizable',
-    description: 'Don\'t like one of the presets?  Customize practically every single aspect of your game!'
-  },
-  {
-    icon: 'hashtag',
-    link: 'http://github.com/jordond/powerhour',
-    heading: 'Free & Open',
-    description: 'Will always be 100% free, and the source is available on GitHub!'
-  }
-];
+const content = {
+  about: 'The drinking game where you take a shot of beer every minute!',
+  highlights: [
+    {
+      icon: 'eye',
+      heading: 'Clean & Simple',
+      description: 'A beutiful UI with bright and vibrant colors, designed for simplicity.'
+    },
+    {
+      icon: 'cogs',
+      heading: 'Customizable',
+      description: 'Don\'t like one of the presets?  Customize practically every single aspect of your game!'
+    },
+    {
+      icon: 'hashtag',
+      link: 'http://github.com/jordond/powerhour',
+      heading: 'Free & Open',
+      description: 'Will always be 100% free, and the source is available on GitHub!'
+    }
+  ]
+};
 
 /* eslint indent: 0 */
 const template = [
@@ -25,7 +28,12 @@ const template = [
     '<div class="highlights-overlay"></div>',
     '<div class="container">',
       '<div class="row">',
-        '<div class="one-third column highlight" ng-repeat="highlight in $ctrl.content">',
+        '<div class="twelve columns highlights-about">',
+          '<h4>{{$ctrl.content.about}}</h4>',
+        '</div>',
+      '</div>',
+      '<div class="row">',
+        '<div class="one-third column highlight" ng-repeat="highlight in $ctrl.content.highlights">',
           '<h2 class="highlight-icon">',
             '<i class="fa fa-{{highlight.icon}}"></i>',
           '</h2>',
