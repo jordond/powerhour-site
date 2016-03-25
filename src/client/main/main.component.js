@@ -6,7 +6,6 @@ import './main.scss';
 
 /* eslint indent: 0 */
 const template = [
-  '<div>',
     '<header class="section"></header>',
     '<highlights class="section"></highlights>',
     '<feature-list></feature-list>',
@@ -16,8 +15,7 @@ const template = [
       'limit="4" ',
       'enable-commit-status="true">',
     '</github-activity>',
-    '<footer></footer>',
-  '</div>'
+    '<footer></footer>'
 ].join('');
 
 const mainComponent = {
