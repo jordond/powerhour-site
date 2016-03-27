@@ -10,14 +10,14 @@ build:
 deploy:
   ssh:
     host: hoogit.ca
-    user: user
+    user: drone
     commands:
       - docker-restart powerhour-staging
     when:
       branch: develop
   ssh:
     host: hoogit.ca
-    user: user
+    user: drone
     commands:
       - docker-restart powerhour
     when:
