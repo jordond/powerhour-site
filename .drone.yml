@@ -12,13 +12,13 @@ deploy:
     host: hoogit.ca
     user: drone
     commands:
-      - docker-restart powerhour-staging
+      - docker-rebuild powerhour-staging
     when:
       branch: develop
   ssh:
     host: hoogit.ca
     user: drone
     commands:
-      - docker-restart powerhour
+      - docker-rebuild powerhour
     when:
       branch: master
