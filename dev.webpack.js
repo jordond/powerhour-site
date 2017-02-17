@@ -46,7 +46,7 @@ module.exports = {
       test: /\.png$/,
       loader: 'url-loader?name=images/[name].png&limit=100000&mimetype=image/png'
     }, {
-      test: /\.jpg$/,
+      test: [/\.jpg$/, /privacy.html$/],
       loader: 'file-loader'
     }]
   },

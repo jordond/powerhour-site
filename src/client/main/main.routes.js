@@ -1,3 +1,5 @@
+import privacy from '../privacy.html';
+
 /**
  * Main and only route
  *
@@ -14,6 +16,13 @@ function getStates() {
         data: {
           misc: 'Hello world'
         }
+      }
+    }, {
+      state: 'privacy',
+      config: {
+        name: 'privacy',
+        url: '/privacy',
+        templateUrl: privacy
       }
     }
   ];

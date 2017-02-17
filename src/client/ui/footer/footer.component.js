@@ -56,6 +56,9 @@ const template = [
         '{{$ctrl.content.copyright.source.text}}',
       '</a>',
       '{{$ctrl.content.copyright.poweredBy}}',
+      '<br /><a ui-sref="privacy">',
+        'Privacy Policy',
+      '</a>',
     '</p>',
   '</div>'
 ].join('');
