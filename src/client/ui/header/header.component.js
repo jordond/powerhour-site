@@ -9,7 +9,7 @@ const content = {
   title: 'Power Hour for Android',
   description: 'An easy way to keep track during everyone\'s favourite drinking game! ',
   actions: [{
-      name: 'Download',
+      name: 'Play Store',
       link: 'https://play.google.com/store/apps/details?id=ca.hoogit.powerhour',
       icon: 'fa-android',
       class: 'button-primary'

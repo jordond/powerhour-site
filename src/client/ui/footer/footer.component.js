@@ -3,9 +3,9 @@ import './footer.scss';
 const content = {
   items: [
     {
-      url: 'https://hoogit.ca',
-      icon: 'home',
-      popover: 'HoogIT'
+      url: 'mailto:contact@powerhourapp.ca',
+      icon: 'envelope',
+      popover: 'Contact'
     },
     {
       url: 'https://play.google.com/store/apps/details?id=ca.hoogit.powerhour',
@@ -13,14 +13,14 @@ const content = {
       popover: 'Play Store'
     },
     {
-      url: 'mailto:contact@powerhourapp.ca',
-      icon: 'envelope',
-      popover: 'Contact'
-    },
-    {
       url: 'https://github.com/jordond/powerhour',
       icon: 'github',
       popover: 'App Source'
+    },
+    {
+      url: '/privacy.html',
+      icon: 'shield',
+      popover: 'Privacy Policy'
     },
     {
       url: 'https://github.com/jordond/powerhour-site',
@@ -29,8 +29,8 @@ const content = {
     }
   ],
   copyright: {
-    text: '© HoogIT. Credits: Jordon de Hoog',
-    poweredBy: ' + Powered by Angular & ES6',
+    text: '© HoogIT 2017. Credits: Jordon de Hoog',
+    poweredBy: ' + Powered by Angular 1',
     source: {
       text: 'Source',
       url: 'https://github.com/jordond/powerhour-site'
