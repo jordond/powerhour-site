@@ -11,7 +11,6 @@ var htmlIndex = path.resolve('./src/client/index.html');
 var entryJS = path.resolve('./src/client/index.js');
 
 module.exports = {
-  devtool: 'source-map',
   context: __dirname,
   entry: {
     vendor: ['angular', 'angular-ui-router', 'moment'],
