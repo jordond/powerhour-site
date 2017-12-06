@@ -18,7 +18,7 @@ const content = {
       popover: 'App Source'
     },
     {
-      url: '/privacy.html',
+      url: 'http://powerhourapp.ca/privacy.html',
       icon: 'shield',
       popover: 'Privacy Policy'
     },
