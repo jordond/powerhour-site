@@ -13,7 +13,10 @@
         <status-badge branch="master"></status-badge>
         <status-badge branch="develop"></status-badge>
       </div>-->
-      <div class="row event-headers">
+      <div ng-if="!$ctrl.events.length" class="no-activity">
+        There has been no recent activity
+      </div>
+      <div class="row event-headers" ng-if="$ctrl.events.length">
         <div class="three columns">
           <h4>Author</h4>
         </div>

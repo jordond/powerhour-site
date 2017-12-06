@@ -18,17 +18,17 @@ const content = {
   features: [
     {
       header: 'Multiple game presets',
-      description: 'Choose from one of the preset game modes. Which include Power Hour, Century Club, or Spartan Mode.  If none of those please you, or you\'re looking for a quick (or long) game. You can create your own game mode, or edit one of the existing presets.',
+      description: 'Choose from one of the preset game modes. Which include Power Hour, Century Club, or Spartan Mode. If none of those please you, or you\'re looking for a quick (or long) game - no problem! You can create your own game mode, or edit one of the existing presets.',
       image: choices
     },
     {
       header: 'Worry free!',
-      description: 'If at some point throughout the game, in a drunken haze you accidentally close the app.  Do not fear!  The game will continue to run in the background, and when it is time for a shot, it will be brought to focus and notify you.  So if you need to turn your screen off to save that precious battery, go right ahead!',
+      description: 'If at some point throughout the game you accidentally close the app in a drunken haze, do not fear!  The game will continue to run in the background, and when it is time for a shot, it will be brought to focus and notify you.  So if you need to turn your screen off to save that precious battery, go right ahead!',
       image: mrDrunk
     },
     {
       header: 'Android Wear Support',
-      description: 'That\'s right! A feature that was requested by no one has been added to Power Hour in the latest update.  Now when you reach the upper hundred levels and can no longer bother to look at your phone, don\'t fret because a simple glance at your wrist will tell you all you need to know!',
+      description: 'That\'s right! A feature that was requested by no one has been added to Power Hour in the latest update.  Now when you reach the upper hundred levels and can no longer bother to look at your phone, a simple glance at your wrist will tell you all you need to know!',
       image: androidWear
     },
     {

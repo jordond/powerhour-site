@@ -6,7 +6,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanPlugin = require('clean-webpack-plugin');
 
 var projectRoot = path.resolve(__dirname);
-var assetPath = path.resolve('./static/dist');
+var assetPath = path.resolve('./dist');
 var htmlIndex = path.resolve('./src/client/index.html');
 var entryJS = path.resolve('./src/client/index.js');
 
@@ -21,7 +21,7 @@ module.exports = {
     path: assetPath,
     filename: '[name]-[hash:6].js',
     chunkFilename: '[name]-[chunkhash:6].js',
-    publicPath: 'dist/'
+    publicPath: '/'
   },
   module: {
     loaders: [{

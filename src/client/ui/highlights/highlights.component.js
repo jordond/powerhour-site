@@ -6,7 +6,7 @@ const content = {
     {
       icon: 'eye',
       heading: 'Clean & Simple',
-      description: 'A beutiful UI with bright and vibrant colors, designed for simplicity.'
+      description: 'A beautiful UI with bright and vibrant colors, designed for simplicity.'
     },
     {
       icon: 'cogs',
